@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/api_list.css">
+	<link rel="stylesheet" type="text/css" href="./lib/datetimepicker/bootstrap-datetimepicker.min.css">
+	<link rel="stylesheet" type="text/css" href="./lib/webuploader/webuploader.css">
+</head>
+<body>
+	<nav class="pull-left clearfix">
+		<div class="logo">
+			<img src="./images/logo.png">
+		</div>
+		<ul>
+			<li class="active">
+				<a href="./index.html">首页</a>
+			</li>
+			<li>
+				<a href="./video_list.html">视频管理</a>
+			</li>
+			<li class="arrows">
+				<a href="javascript:;" data-toggle="collapse" data-target="#user_panel">用户管理</a>
+			</li>
+			<ul id="user_panel" class="collapse">
+				<li><a href="./user_list.html">用户编辑</a></li>
+				<li><a href="./user_black.html">黑名单</a></li>
+			</ul>
+			<li class="arrows">
+				<a href="javascript:;" data-toggle="collapse" data-target="#api_panel">接口管理</a>
+			</li>
+			<ul id="api_panel" class="collapse">
+				<li><a href="./api_list.html">分类排序</a></li>
+				<li><a href="./api_search.html">搜索排序</a></li>
+				<li><a href="./api_hot.html">热门标签</a></li>
+			</ul>
+			<li class="arrows">
+				<a href="javascript:;" data-toggle="collapse" data-target="#contain_panel">内容审核</a>
+			</li>
+			<ul id="contain_panel" class="collapse">
+				<li><a href="./content_video.html">视频审核</a></li>
+				<li><a href="./content_say.html">评论审核</a></li>
+				<li><a href="./content_report.html">举报处理</a></li>
+				<li><a href="./content_world.html">过滤词库</a></li>
+			</ul>
+			<li class="arrows">
+				<a href="javascript:;" data-toggle="collapse" data-target="#day_panel">日常运营</a>
+			</li>
+			<ul id="day_panel" class="collapse">
+				<li><a href="./operate.html">每日精选</a></li>
+				<li><a href="./operate_theme.html">话题</a></li>
+			</ul>
+			<li>
+				<a href="./account.html">账号管理</a>
+			</li>
+		</ul>
+	</nav>
+	<div class="main_body pull-right clearfix">
+		<section class="uesr_nav clearfix text-right">
+			<span>
+				<a href="">Peter Main</a>
+				<a href="">退出</a>
+			</span>
+		</section>
+		<section class="table_box">
+			<div class="header clearfix">
+				<ol class="breadcrumb clearMargin">
+				    <li><a href="#">接口管理</a></li>
+				    <li>搜索排序</li>
+				</ol>
+				<div class="pull-right">
+					<a href="javascript:;" id='add_user'>保存</a>
+				</div>
+			</div>
+			<section class="api_hot">
+				<div class="tag_box">
+					标签1
+					<div class="close_btn"></div>
+				</div>
+				<div class="tag_box">
+					标签1
+					<div class="close_btn"></div>
+				</div>
+				<div class="tag_box">
+					标签1
+					<div class="close_btn"></div>
+				</div>
+				<div class="tag_box">
+					标签1
+					<div class="close_btn"></div>
+				</div>
+				<div class="tag_box">
+					标签1
+					<div class="close_btn"></div>
+				</div>
+				<div class="tag_box">
+					标签1
+					<div class="close_btn"></div>
+				</div>
+				<div class="tag_box">
+					标签1
+					<div class="close_btn"></div>
+				</div>
+				<div class="tag_box">
+					标签1
+					<div class="close_btn"></div>
+				</div>
+				<div class="tag_box">
+					标签1
+					<div class="close_btn"></div>
+				</div>
+				<div class="tag_box">
+					标签1
+					<div class="close_btn"></div>
+				</div>
+				<div class="tag_box">
+					标签1
+					<div class="close_btn"></div>
+				</div>
+				<div class="tag_box">
+					标签1
+					<div class="close_btn"></div>
+				</div>
+				<div class="tag_box">
+					标签1
+					<div class="close_btn"></div>
+				</div>
+				<div class="tag_box">
+					标签1
+					<div class="close_btn"></div>
+				</div>
+				
+				<input type="text" placeholder="请输入标签" id='add_tag' class="add_tag">
+			</section>
+		</section>
+	</div>
+	<script type="text/javascript" src="./js/jquery.min.js"></script>
+	<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		$('body').delegate('.close_btn','click',function(){
+			$(this).parent().remove();
+		})
+		$("#add_tag").change(function(){
+			var value = $(this).val();
+			var str ='';
+			str += '<div class="tag_box">'+value+'<div class="close_btn"></div></div>';
+			$(this).before(str);
+			$(this).val('');
+		})
+	</script>
+</body>
+</html>

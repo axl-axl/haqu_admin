@@ -1,0 +1,175 @@
+@import "main.css";
+@import "nav.css";
+section.table_box{
+	margin-top:40px;
+	width:90%;
+	.header{
+		a{
+			background:#f36a6a;
+			color:#fff;
+			display:inline-block;
+			text-align:center;
+			line-height:2.8rem;
+			border-radius:30px;
+			width:80px;
+		}
+		.breadcrumb{
+			padding:0;
+			li{
+				a{
+					background:inherit;
+					line-height:1.5rem;
+					color:#666;
+				}
+			}
+		}
+		.clearMargin{
+			margin:0;
+		}
+	}
+	.api_list{
+		width:500px;
+		.head{
+			margin-bottom:20px;
+			span{
+				&:nth-child(1){
+					width:8%;
+					display:inline-block;
+					text-align:center;
+				}
+				&.long{
+					display:inline-block;
+					width:38%;
+					margin:0 3%;
+					margin-top:10px;
+					text-align:center;
+				}
+				&.short{
+					display:inline-block;
+					width:15%;
+					margin:0 3%;
+					text-align:center;
+				}
+				&.small{
+					display:inline-block;
+					text-align:center;
+					width:10%;
+					margin:0 3%;
+				}
+			}
+		}
+		.add_api{
+			position:relative;
+			input{
+				width:38%;
+				padding-left:15px;
+				background:#fff;
+				line-height:2.8rem;
+				border-radius:3px;
+				border:1px solid #ddd;
+				margin:0 3%;
+			}
+			.complete,.search_complete{
+				background:#3d474f;
+				color:#fff;
+				text-align:center;
+				width:60px;
+				border-radius:3px;
+				line-height:3rem;
+				cursor:pointer;
+				display:inline-block;
+			}
+			.complete{
+				position:absolute;
+				right:-60px;
+			}
+			.short{
+				border:0;
+			}
+		}
+		li{
+			.frist{
+				width:8%;
+				display:inline-block;
+				text-align:center;
+			}
+			.long{
+				width:38%;
+				border-radius:3px;
+				display:inline-block;
+				border:1px solid #ddd;
+				background:#f7f7f7;
+				line-height:2.8rem;
+				text-align:center;
+				margin:0 3%;
+				margin-top:10px;
+			}
+			.short{
+				display:inline-block;
+				width:15%;
+				margin:0 3%;
+				border-radius:3px;
+				border:1px solid #ddd;
+				background:#f7f7f7;
+				line-height:2.8rem;
+				text-align:center;
+			}
+			.small{
+				display:inline-block;
+				text-align:center;
+				width:10%;
+				margin:0 3%;
+			}
+		}
+	}
+	.api_hot{
+		.tag_box{
+			display:inline-block;
+			padding:0.8rem 2rem;
+			background:#f7f7f7;
+			border:1px solid #ddd;
+			border-radius:3px;
+			position:relative;
+			margin:0.5rem 1rem;
+			&:hover{
+				.close_btn{
+					display:block;
+				}
+			}
+			.close_btn{
+				display:none;
+				position:absolute;
+				width:18px;
+				height:18px;
+				background:#333;
+				border-radius:50%;
+				top:-5px;
+				right:-5px;
+				cursor:pointer;
+				&:after,&:before{
+					content:' ';
+					display:inline-block;
+					width:10px;
+					height:1px;
+					background:#fff;
+					position:absolute;
+					top:50%;
+					left:20%;
+					transform:rotate(45deg)
+				}
+				&:after{
+					transform:rotate(135deg)
+				}
+			}
+		}
+		.add_tag{
+			background:#fff;
+			border-radius:3px;
+			display:inline-block;
+			margin:0.5rem 1rem;
+			border:1px solid #ddd;
+			width:80px;
+			padding:0.8rem 5px;
+		}
+	}
+}

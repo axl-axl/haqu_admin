@@ -1,0 +1,165 @@
+@import "main.css";
+@import "nav.css";
+section.table_box {
+  margin-top: 40px;
+  width: 90%;
+}
+section.table_box .header {
+  position: relative;
+}
+section.table_box .header a {
+  background: #f36a6a;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  line-height: 2.8rem;
+  border-radius: 30px;
+  width: 80px;
+}
+section.table_box .header .breadcrumb {
+  padding: 0;
+}
+section.table_box .header .breadcrumb li a {
+  background: inherit;
+  line-height: 1.5rem;
+  color: #666;
+  width: auto;
+}
+section.table_box .header .clearMargin {
+  margin: 0;
+}
+section.table_box .header .set_date {
+  width: 80px;
+  text-align: center;
+  background: #fff;
+  font-size: 1rem;
+  border: 2px solid #3e4852;
+  border-radius: 5px;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  cursor: pointer;
+}
+section.table_box .header .set_date h3 {
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: #f36a6a;
+}
+section.table_box .operate_list {
+  width: 800px;
+}
+section.table_box .operate_list .head {
+  margin-bottom: 20px;
+}
+section.table_box .operate_list .head span #cover {
+  position: relative;
+  height: 90px;
+  border: 1px solid #ddd;
+}
+section.table_box .operate_list .head span #cover img {
+  width: 40px;
+}
+section.table_box .operate_list .head span #cover p {
+  font-size: 1.5rem;
+}
+section.table_box .operate_list .head span.long {
+  display: inline-block;
+  width: 38%;
+  margin-top: 0px;
+  vertical-align: top;
+  text-align: center;
+}
+section.table_box .operate_list .head span.long input {
+  width: 100%;
+  border-radius: 5px;
+  line-height: 3.5rem;
+  background: #fff;
+  margin-bottom: 10px;
+  padding-left: 15px;
+  border: 1px solid #ddd;
+}
+section.table_box .operate_list .head span.short {
+  display: inline-block;
+  width: 15%;
+  margin: 0 3%;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+section.table_box .operate_list .head span.short .imgShow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+section.table_box .operate_list .head span.short .imgShow img {
+  width: 100%;
+}
+section.table_box .operate_list .head span.small {
+  display: inline-block;
+  text-align: center;
+  width: 10%;
+  margin: 0 3%;
+}
+section.table_box .operate_list .head span.complete {
+  background: #3d474f;
+  color: #fff;
+  text-align: center;
+  width: 60px;
+  border-radius: 3px;
+  line-height: 3rem;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: top;
+}
+section.table_box .operate_list li .long {
+  width: 38%;
+  border-radius: 3px;
+  display: inline-block;
+  text-align: left;
+  margin-top: 10px;
+  vertical-align: middle;
+}
+section.table_box .operate_list li .short {
+  display: inline-block;
+  width: 15%;
+  margin: 0 3%;
+  border-radius: 3px;
+  text-align: center;
+}
+section.table_box .operate_list li .short img {
+  width: 100%;
+}
+section.table_box .operate_list li .small {
+  display: inline-block;
+  text-align: center;
+  width: 10%;
+  margin: 0 3%;
+}
+section.table_box .operate_list li .small img {
+  margin: 0 0.5rem;
+}
+section.play_box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  z-index: 9;
+}
+section.play_box .mask {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+section.play_box embed {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -150px;
+  margin-left: -250px;
+  width: 500px;
+  height: 300px;
+}

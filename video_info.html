@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./lib/datetimepicker/bootstrap-datetimepicker.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/video_info.css">
+	<link rel="stylesheet" type="text/css" href="./lib/webuploader/webuploader.css">
+</head>
+<body>
+	<nav class="pull-left clearfix">
+		<div class="logo">
+			<img src="./images/logo.png">
+		</div>
+		<ul>
+			<li class="active">
+				<a href="./index.html">首页</a>
+			</li>
+			<li>
+				<a href="./video_list.html">视频管理</a>
+			</li>
+			<li class="arrows">
+				<a href="javascript:;" data-toggle="collapse" data-target="#user_panel">用户管理</a>
+			</li>
+			<ul id="user_panel" class="collapse">
+				<li><a href="./user_list.html">用户编辑</a></li>
+				<li><a href="./user_black.html">黑名单</a></li>
+			</ul>
+			<li class="arrows">
+				<a href="javascript:;" data-toggle="collapse" data-target="#api_panel">接口管理</a>
+			</li>
+			<ul id="api_panel" class="collapse">
+				<li><a href="./api_list.html">分类排序</a></li>
+				<li><a href="./api_search.html">搜索排序</a></li>
+				<li><a href="./api_hot.html">热门标签</a></li>
+			</ul>
+			<li class="arrows">
+				<a href="javascript:;" data-toggle="collapse" data-target="#contain_panel">内容审核</a>
+			</li>
+			<ul id="contain_panel" class="collapse">
+				<li><a href="./content_video.html">视频审核</a></li>
+				<li><a href="./content_say.html">评论审核</a></li>
+				<li><a href="./content_report.html">举报处理</a></li>
+				<li><a href="./content_world.html">过滤词库</a></li>
+			</ul>
+			<li class="arrows">
+				<a href="javascript:;" data-toggle="collapse" data-target="#day_panel">日常运营</a>
+			</li>
+			<ul id="day_panel" class="collapse">
+				<li><a href="./operate.html">每日精选</a></li>
+				<li><a href="./operate_theme.html">话题</a></li>
+			</ul>
+			<li>
+				<a href="./account.html">账号管理</a>
+			</li>
+		</ul>
+	</nav>
+	<div class="main_body pull-right clearfix">
+		<section class="uesr_nav clearfix text-right">
+			<span>
+				<a href="">Peter Main</a>
+				<a href="">退出</a>
+			</span>
+		</section>
+		<section class="video_info">
+			<div class="header clearfix">
+				<ol class="breadcrumb">
+				    <li><a href="#">视频管理</a></li>
+				    <li><a href="#">视频详情</a></li>
+				</ol>
+			</div>
+			<form method="" action="post" class="clearfix">
+				<div class="input-group">
+		            <span class="input-title">标题</span>
+		            <input type="text" class="long_input" placeholder="twitterhandle">
+		        </div>
+		        <div class="input-group">
+		            <span class="input-title">地址</span>
+		            <input type="text" class="long_input" placeholder="twitterhandle">
+		        </div>
+		        <div class="input-group">
+		            <span class="input-title">图片</span>
+		            <div class="img_in">
+						<div id="filePicker" class="img_box">
+							+上传图片
+						</div>
+						<!-- <div id='imgShow' class="add_box"></div> -->
+					</div>
+		        </div>
+		        <div class="input-group">
+		            <span class="input-title">分类</span>
+		            <div class="checkbox_box">
+		            	<div class="checkbox_mask"></div>
+		            	<input type="checkbox" name='kind'>
+		            	搞笑
+		            </div>
+		            <div class="checkbox_box">
+		            	<div class="checkbox_mask"></div>
+		            	<input type="checkbox" name='kind'>
+		            	美女
+		            </div>
+		        </div>
+		        <div class="short-group">
+		            <span class="input-title">发布者</span>
+		            <input type="text" class="short_input" placeholder="twitterhandle">
+		        </div>
+		        <div class="short-group">
+		            <span class="input-title">播放次数</span>
+		            <input type="text" class="short_input" placeholder="twitterhandle">
+		        </div>
+		        <div class="short-group">
+		            <span class="input-title">顶</span>
+		            <input type="text" class="short_input" placeholder="twitterhandle">
+		        </div>
+		        <div class="short-group">
+		            <span class="input-title">踩</span>
+		            <input type="text" class="short_input" placeholder="twitterhandle">
+		        </div>
+		        <div class="short-group search_box">
+		            <span class="input-title">关联影视快搜</span>
+		            <input type="text" class="short_input" id='search' placeholder="twitterhandle">
+		            <ul class="search_re">
+						<li>我是第一条结果</li>
+						<li>我是第二条结果</li>
+		            </ul>
+		        </div>
+		        <div class="input-group text-center">
+		        	<input type="submit" value='提交' class="submit">
+		        </div>
+			</form>
+		</section>
+	</div>
+	<script type="text/javascript" src="./js/jquery.min.js"></script>
+	<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="./lib/webuploader/webuploader.min.js"></script>
+	<script type="text/javascript" src="./js/main.js"></script>
+	<script type="text/javascript">
+		//检测是否选中复选框
+		function checkbox(){
+			var checkboxs = document.getElementsByClassName('checkbox_box');
+			for(var i=0;i<checkboxs.length;i++){
+				if(checkboxs[i]['children'][1].checked){
+					checkboxs[i]['children'][0].classList.add('active');
+				}else{
+					checkboxs[i]['children'][0].classList.remove('active');
+				}
+			}
+		}
+		$('.checkbox_box input').click(function(){
+			checkbox();
+		})
+		//搜索
+		$('body').delegate('#search','input propertychange', function() {
+		    var a = $(this).val();
+		    console.log(a)
+		});
+		//选择搜索选项
+		$('body').delegate('.search_re li','click',function(){
+			var val = $(this).html();
+			$('#search').val(val);
+			$('.search_re').html('');
+		})
+		uploaderlist('#filePicker')
+	</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style-type: none;
+}
+input {
+  outline: none;
+}
+a:hover,
+a:link,
+a:active,
+a:visited {
+  text-decoration: none;
+}
+body {
+  background: #f3f3f3;
+  overflow-x: hidden;
+  font-family: "Microsoft YaHei";
+}

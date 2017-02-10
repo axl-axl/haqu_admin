@@ -1,0 +1,106 @@
+@import "main.css";
+@import "nav.css";
+section.table_box {
+  margin-top: 40px;
+  width: 90%;
+}
+section.table_box .header a {
+  background: #f36a6a;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  line-height: 2.8rem;
+  border-radius: 30px;
+  width: 80px;
+}
+section.table_box .header .breadcrumb {
+  padding: 0;
+}
+section.table_box .header .breadcrumb li a {
+  background: inherit;
+  line-height: 1.5rem;
+  color: #666;
+  width: auto;
+}
+section.table_box .header .clearMargin {
+  margin: 0;
+}
+section.table_box .toggle_nav {
+  margin: 0px;
+}
+section.table_box .toggle_nav span {
+  background: url('../images/toggle.png') no-repeat;
+  background-size: 100%;
+  height: 37px;
+  position: relative;
+  line-height: 37px;
+  text-align: center;
+  margin: 0px;
+  width: 173px;
+  display: inline-block;
+  cursor: pointer;
+}
+section.table_box .toggle_nav span:nth-child(2) {
+  margin-left: -30px;
+}
+section.table_box .toggle_nav span.active {
+  background: url('../images/toggle_a.png') no-repeat;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+}
+section.table_box .content_world {
+  padding-top: 30px;
+  border-top: 4px solid #3e4650;
+  display: none;
+}
+section.table_box .content_world.active {
+  display: block;
+}
+section.table_box .content_world .tag_box {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  background: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  position: relative;
+  margin: 0.5rem 1rem;
+}
+section.table_box .content_world .tag_box:hover .close_btn {
+  display: block;
+}
+section.table_box .content_world .tag_box .close_btn {
+  display: none;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background: #333;
+  border-radius: 50%;
+  top: -5px;
+  right: -5px;
+  cursor: pointer;
+}
+section.table_box .content_world .tag_box .close_btn:after,
+section.table_box .content_world .tag_box .close_btn:before {
+  content: ' ';
+  display: inline-block;
+  width: 10px;
+  height: 1px;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: rotate(45deg);
+}
+section.table_box .content_world .tag_box .close_btn:after {
+  transform: rotate(135deg);
+}
+section.table_box .content_world .add_tag {
+  background: #fff;
+  border-radius: 3px;
+  display: inline-block;
+  margin: 0.5rem 1rem;
+  border: 1px solid #ddd;
+  width: 80px;
+  padding: 0.8rem 5px;
+}

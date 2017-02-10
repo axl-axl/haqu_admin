@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/operate.css">
+	<link rel="stylesheet" type="text/css" href="./lib/webuploader/webuploader.css">
+</head>
+<body>
+	<nav class="pull-left clearfix">
+		<div class="logo">
+			<img src="./images/logo.png">
+		</div>
+		<ul>
+			<li class="active">
+				<a href="./index.html">首页</a>
+			</li>
+			<li>
+				<a href="./video_list.html">视频管理</a>
+			</li>
+			<li class="arrows">
+				<a href="javascript:;" data-toggle="collapse" data-target="#user_panel">用户管理</a>
+			</li>
+			<ul id="user_panel" class="collapse">
+				<li><a href="./user_list.html">用户编辑</a></li>
+				<li><a href="./user_black.html">黑名单</a></li>
+			</ul>
+			<li class="arrows">
+				<a href="javascript:;" data-toggle="collapse" data-target="#api_panel">接口管理</a>
+			</li>
+			<ul id="api_panel" class="collapse">
+				<li><a href="./api_list.html">分类排序</a></li>
+				<li><a href="./api_search.html">搜索排序</a></li>
+				<li><a href="./api_hot.html">热门标签</a></li>
+			</ul>
+			<li class="arrows">
+				<a href="javascript:;" data-toggle="collapse" data-target="#contain_panel">内容审核</a>
+			</li>
+			<ul id="contain_panel" class="collapse">
+				<li><a href="./content_video.html">视频审核</a></li>
+				<li><a href="./content_say.html">评论审核</a></li>
+				<li><a href="./content_report.html">举报处理</a></li>
+				<li><a href="./content_world.html">过滤词库</a></li>
+			</ul>
+			<li class="arrows">
+				<a href="javascript:;" data-toggle="collapse" data-target="#day_panel">日常运营</a>
+			</li>
+			<ul id="day_panel" class="collapse">
+				<li><a href="./operate.html">每日精选</a></li>
+				<li><a href="./operate_theme.html">话题</a></li>
+			</ul>
+			<li>
+				<a href="./account.html">账号管理</a>
+			</li>
+		</ul>
+	</nav>
+	<div class="main_body pull-right clearfix">
+		<section class="uesr_nav clearfix text-right">
+			<span>
+				<a href="">Peter Main</a>
+				<a href="">退出</a>
+			</span>
+		</section>
+		<section class="table_box">
+			<div class="header clearfix">
+				<ol class="breadcrumb clearMargin">
+				    <li><a href="#">日常运营</a></li>
+				    <li>每日精选</li>
+				</ol>
+				<div class="pull-right">
+					<a href="javascript:;" id='add_user'>保存</a>
+				</div>
+				<div class="set_date">
+					<h3>15</h3>
+					<p>2016/11</p>
+				</div>
+			</div>
+			<section class="operate_box">
+				<ul class="operate_list">
+					<div class="head">
+						<span class="short">
+							<div id='cover'>
+								<img src="./images/icon_upload_big.png">
+								<p>上传照片</p>
+							</div>
+							<div id="imgShow" class="imgShow"></div>
+						</span>
+						<span class="long">
+							<input type="text" name="">
+							<input type="text" name="">
+						</span>
+						<span class="small complete">
+							添加
+						</span>
+					</div>
+					<li>
+						<span class="short">
+							<img src="./images/es.png">
+						</span>
+						<span class="long">
+							<p>
+								受打击防静电父母到凤凰绝活单反覅偶回家发到付拉大大师傅
+							</p>
+							<p>ID:12354</p>
+						</span>
+						<span class="small">
+							<a href="javascript:;" value="http://player.youku.com/player.php/sid/XMTgwOTM5ODY0OA==/v.swf" class="play_btn"><img src="./images/play.png"></a>
+							<a href=""><img src="./images/del.png"></a>
+						</span>
+					</li>
+				</ul>
+			</section>
+			<section class="play_box">
+				<div class="mask"></div>
+				<embed width="320" height="240" id='embed' src="" />
+			</section>
+		</section>
+	</div>
+	<script type="text/javascript" src="./js/jquery.min.js"></script>
+	<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="./lib/webuploader/webuploader.min.js"></script>
+	<script type="text/javascript" src="./js/main.js"></script>
+	<script type="text/javascript">
+		$('body').delegate('.play_btn','click',function(){
+			var src = $(this).attr('value');
+			$('#embed').attr('src',src);
+			$('.play_box').show();
+		})
+		$('.mask').click(function(){
+			$(this).parent().hide();
+		})
+		uploader('#cover');
+	</script>
+</body>
+</html>

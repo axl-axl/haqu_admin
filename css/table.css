@@ -1,0 +1,556 @@
+@import "main.css";
+@import "nav.css";
+section.table_box {
+  margin-top: 40px;
+  width: 90%;
+}
+section.table_box .header input {
+  line-height: 3rem;
+  background: #fff;
+  border-radius: 30px;
+  min-width: 200px;
+  padding-left: 15px;
+  margin: 20px;
+  margin-top: 0px;
+  border: 1px solid #ddd;
+}
+section.table_box .header a {
+  background: #f36a6a;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  line-height: 2.8rem;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  width: 80px;
+}
+section.table_box .header .breadcrumb {
+  padding: 0;
+}
+section.table_box .header .breadcrumb li a {
+  background: inherit;
+  line-height: 1.5rem;
+  color: #666;
+  width: auto;
+  margin-bottom: 0;
+}
+section.table_box .header .clearMargin {
+  margin: 0;
+}
+section.table_box .header h3 {
+  font-weight: bold;
+}
+section.table_box .date_box {
+  text-align: center;
+  margin-top: 50px;
+}
+section.table_box .date_box .datetimepicker-inline {
+  width: auto;
+  display: inline-block;
+}
+section.table_box .date_box table {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  background: #fff;
+}
+section.table_box .date_box table tbody td {
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 0;
+}
+section.table_box .date_box table tbody td.active,
+section.table_box .date_box table tbody td.active:hover {
+  background: #fff;
+  border: 1px solid #f26b6a;
+  color: #202730;
+}
+section.table_box .date_box table thead tr:first-child {
+  background: #212831;
+}
+section.table_box .date_box table thead tr:first-child th,
+section.table_box .date_box table thead tr:first-child th:hover {
+  background: #212831;
+  border-radius: 0;
+  color: #fff;
+}
+section.table_box .date_box table thead tr th {
+  padding: 0.5rem 1rem;
+  font-size: 2rem;
+}
+section.table_box .tab-pane {
+  display: none;
+}
+section.table_box .tab-pane.active {
+  display: block;
+}
+section.table_box .toggle_nav {
+  margin: 0px;
+}
+section.table_box .toggle_nav span {
+  background: url('../images/toggle.png') no-repeat;
+  background-size: 100%;
+  height: 37px;
+  position: relative;
+  line-height: 37px;
+  text-align: center;
+  margin: 0px;
+  width: 173px;
+  display: inline-block;
+  cursor: pointer;
+}
+section.table_box .toggle_nav span:nth-child(2) {
+  margin-left: -30px;
+}
+section.table_box .toggle_nav span.active {
+  background: url('../images/toggle_a.png') no-repeat;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+}
+section.table_box .table thead {
+  background: #3d4751;
+  border: 1px solid #3d4751;
+}
+section.table_box .table thead th {
+  color: #fff;
+  line-height: 2rem;
+}
+section.table_box .table .table_bg {
+  min-height: 600px;
+}
+section.table_box .table tbody {
+  background: #fff;
+}
+section.table_box .table tbody tr {
+  border: 1px solid #ddd;
+  border-top: 0;
+}
+section.table_box .table tbody tr td {
+  line-height: 3rem;
+  text-align: center;
+  vertical-align: middle;
+}
+section.table_box .table tbody tr td p {
+  margin: 0;
+  line-height: 1.8rem;
+}
+section.table_box .table tbody tr td.comment {
+  width: 55%;
+  text-align: left;
+}
+section.table_box .table tbody tr td.comment_content {
+  width: 35%;
+  text-align: left;
+}
+section.table_box .table tbody tr td.comment_content .warn {
+  display: inline;
+  color: #ef8601;
+}
+section.table_box .table tbody tr td.comment_content .ban {
+  display: inline;
+  color: #f66c69;
+}
+section.table_box .table tbody tr td.comment_content .content_bottom {
+  color: #999;
+}
+section.table_box .table tbody tr td.video {
+  width: 20%;
+}
+section.table_box .table tbody tr td a {
+  padding: 0 5px;
+}
+section.table_box .table tbody tr td.handle a {
+  background: #f3f3f3;
+  padding: 0 15px;
+  display: inline-block;
+  color: #333;
+  border-radius: 5px;
+  line-height: 25px;
+}
+section.table_box .table tbody tr td.power_box {
+  width: 30%;
+}
+section.table_box .table tbody tr td.power_box span {
+  text-align: left;
+  display: inline-block;
+  width: 30%;
+}
+section.table_box .table tbody tr td.power_box .checkbox_box {
+  display: inline-block;
+  position: relative;
+  margin-right: 20px;
+  z-index: 1;
+}
+section.table_box .table tbody tr td.power_box .checkbox_box .checkbox_mask {
+  position: absolute;
+  z-index: -1;
+  border: 1px solid #999;
+  width: 20px;
+  height: 20px;
+  top: 7px;
+  left: 5px;
+  border-radius: 3px;
+}
+section.table_box .table tbody tr td.power_box .checkbox_box .checkbox_mask.active {
+  background-color: #000;
+}
+section.table_box .table tbody tr td.power_box .checkbox_box .checkbox_mask.active:after {
+  content: ' ';
+  width: 10px;
+  height: 2px;
+  background: #fecb46;
+  position: absolute;
+  transform: rotate(135deg);
+  top: 50%;
+  left: 40%;
+  margin-left: -1.5px;
+}
+section.table_box .table tbody tr td.power_box .checkbox_box .checkbox_mask.active:before {
+  content: ' ';
+  width: 5px;
+  height: 2px;
+  background: #fecb46;
+  position: absolute;
+  transform: rotate(45deg);
+  top: 50%;
+  left: 40%;
+  margin-left: -4px;
+  margin-top: 1px;
+}
+section.table_box .table tbody tr td.power_box .checkbox_box input {
+  opacity: 0;
+  width: 25px;
+  height: 25px;
+  vertical-align: bottom;
+}
+section.table_box .table tbody tr td .head_img {
+  width: 60px;
+  margin-right: 1rem;
+  display: inline-block;
+}
+section.table_box .table tbody tr td .content_btn {
+  display: inline-block;
+  margin: 0 5px;
+  padding: 0.2rem 1.5rem;
+  border-radius: 3px;
+  line-height: 2rem;
+  border: 1px solid #ddd;
+  background: #f7f7f7;
+  color: #333;
+}
+section.table_box .page li {
+  text-align: center;
+  display: inline-block;
+  background: #fff;
+  border-radius: 2px;
+}
+section.table_box .page li a {
+  color: #666;
+  display: block;
+  padding: 5px 10px;
+}
+section.table_box .page li.active,
+section.table_box .page li:hover {
+  background: #bababa;
+}
+section.table_box .page li.active a,
+section.table_box .page li:hover a {
+  color: #fff;
+}
+section.play_box,
+section.date_box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  z-index: 9;
+}
+section.play_box .mask,
+section.date_box .mask {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+section.play_box embed,
+section.date_box embed {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -150px;
+  margin-left: -250px;
+  width: 500px;
+  height: 300px;
+}
+section.play_box #embed,
+section.date_box #embed {
+  width: 600px;
+  height: 400px;
+  margin-top: -200px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  margin-left: -300px;
+}
+section.play_box #add_date,
+section.date_box #add_date {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -110px;
+  margin-left: -130px;
+  background: #fff;
+  padding-bottom: 6rem;
+  text-align: center;
+  width: 300px;
+}
+section.play_box #add_date .sure_btn,
+section.date_box #add_date .sure_btn {
+  background: #e53b3f;
+  color: #fff;
+  border-radius: 5px;
+  padding: 0.8rem 2.5rem;
+  display: inline-block;
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  margin-left: -3.5rem;
+  cursor: pointer;
+}
+section.play_box #add_date p,
+section.date_box #add_date p {
+  line-height: 3rem;
+  padding-left: 1rem;
+  background: #212831;
+  color: #fff;
+  text-align: left;
+}
+section.play_box .editor_box,
+section.date_box .editor_box,
+section.play_box .black_box,
+section.date_box .black_box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -300px;
+  margin-left: -250px;
+  width: 500px;
+  height: 600px;
+  background: #fff;
+}
+section.play_box .editor_box .header,
+section.date_box .editor_box .header,
+section.play_box .black_box .header,
+section.date_box .black_box .header {
+  padding: 0 15px;
+  line-height: 50px;
+  background: #212831;
+  color: #fff;
+}
+section.play_box .editor_box .input-group,
+section.date_box .editor_box .input-group,
+section.play_box .black_box .input-group,
+section.date_box .black_box .input-group {
+  width: 80%;
+  margin-top: 25px;
+}
+section.play_box .editor_box .input-group #cover,
+section.date_box .editor_box .input-group #cover,
+section.play_box .black_box .input-group #cover,
+section.date_box .black_box .input-group #cover {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 170px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  border: 1px solid #ddd;
+}
+section.play_box .editor_box .input-group #head_btn,
+section.date_box .editor_box .input-group #head_btn,
+section.play_box .black_box .input-group #head_btn,
+section.date_box .black_box .input-group #head_btn {
+  display: inline-block;
+  vertical-align: bottom;
+  width: 55px;
+  opacity: 1;
+  height: 55px;
+  z-index: 3;
+  background: #f7f7f7;
+  position: relative;
+  border: 1px dashed #aaa;
+  border-radius: 5px;
+}
+section.play_box .editor_box .input-group #head_btn:after,
+section.date_box .editor_box .input-group #head_btn:after,
+section.play_box .black_box .input-group #head_btn:after,
+section.date_box .black_box .input-group #head_btn:after,
+section.play_box .editor_box .input-group #head_btn:before,
+section.date_box .editor_box .input-group #head_btn:before,
+section.play_box .black_box .input-group #head_btn:before,
+section.date_box .black_box .input-group #head_btn:before {
+  content: ' ';
+  width: 30px;
+  height: 2px;
+  display: block;
+  border-radius: 2px;
+  background: #ccc;
+  position: absolute;
+  transform: rotate(90deg);
+  top: 50%;
+  left: 20%;
+}
+section.play_box .editor_box .input-group #head_btn:before,
+section.date_box .editor_box .input-group #head_btn:before,
+section.play_box .black_box .input-group #head_btn:before,
+section.date_box .black_box .input-group #head_btn:before {
+  transform: rotate(0deg);
+  top: 50%;
+  left: 20%;
+}
+section.play_box .editor_box .input-group #imgShow,
+section.date_box .editor_box .input-group #imgShow,
+section.play_box .black_box .input-group #imgShow,
+section.date_box .black_box .input-group #imgShow {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 25%;
+  z-index: 0;
+}
+section.play_box .editor_box .input-group #imgShow .thumbnail,
+section.date_box .editor_box .input-group #imgShow .thumbnail,
+section.play_box .black_box .input-group #imgShow .thumbnail,
+section.date_box .black_box .input-group #imgShow .thumbnail {
+  border: 1px dashed #ddd;
+}
+section.play_box .editor_box .input-group span,
+section.date_box .editor_box .input-group span,
+section.play_box .black_box .input-group span,
+section.date_box .black_box .input-group span,
+section.play_box .editor_box .input-group input,
+section.date_box .editor_box .input-group input,
+section.play_box .black_box .input-group input,
+section.date_box .black_box .input-group input {
+  line-height: 2.8rem;
+  display: inline-block;
+}
+section.play_box .editor_box .input-group span,
+section.date_box .editor_box .input-group span,
+section.play_box .black_box .input-group span,
+section.date_box .black_box .input-group span {
+  width: 20%;
+  text-align: right;
+  margin-right: 1.5rem;
+}
+section.play_box .editor_box .input-group input,
+section.date_box .editor_box .input-group input,
+section.play_box .black_box .input-group input,
+section.date_box .black_box .input-group input {
+  width: 70%;
+  border-radius: 5px;
+  background: #fafafa;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+}
+section.play_box .editor_box .input-group .operate_box,
+section.date_box .editor_box .input-group .operate_box,
+section.play_box .black_box .input-group .operate_box,
+section.date_box .black_box .input-group .operate_box {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 70%;
+  z-index: 2;
+}
+section.play_box .editor_box .input-group .operate_box .checkbox_box,
+section.date_box .editor_box .input-group .operate_box .checkbox_box,
+section.play_box .black_box .input-group .operate_box .checkbox_box,
+section.date_box .black_box .input-group .operate_box .checkbox_box {
+  display: inline-block;
+  position: relative;
+  margin-right: 20px;
+  width: auto;
+}
+section.play_box .editor_box .input-group .operate_box .checkbox_box .checkbox_mask,
+section.date_box .editor_box .input-group .operate_box .checkbox_box .checkbox_mask,
+section.play_box .black_box .input-group .operate_box .checkbox_box .checkbox_mask,
+section.date_box .black_box .input-group .operate_box .checkbox_box .checkbox_mask {
+  position: absolute;
+  z-index: -1;
+  border: 1px solid #999;
+  width: 20px;
+  height: 20px;
+  top: 7px;
+  left: 5px;
+  border-radius: 3px;
+}
+section.play_box .editor_box .input-group .operate_box .checkbox_box .checkbox_mask.active,
+section.date_box .editor_box .input-group .operate_box .checkbox_box .checkbox_mask.active,
+section.play_box .black_box .input-group .operate_box .checkbox_box .checkbox_mask.active,
+section.date_box .black_box .input-group .operate_box .checkbox_box .checkbox_mask.active {
+  background-color: #000;
+}
+section.play_box .editor_box .input-group .operate_box .checkbox_box .checkbox_mask.active:after,
+section.date_box .editor_box .input-group .operate_box .checkbox_box .checkbox_mask.active:after,
+section.play_box .black_box .input-group .operate_box .checkbox_box .checkbox_mask.active:after,
+section.date_box .black_box .input-group .operate_box .checkbox_box .checkbox_mask.active:after {
+  content: ' ';
+  width: 10px;
+  height: 2px;
+  background: #fecb46;
+  position: absolute;
+  transform: rotate(135deg);
+  top: 50%;
+  left: 40%;
+  margin-left: -1.5px;
+}
+section.play_box .editor_box .input-group .operate_box .checkbox_box .checkbox_mask.active:before,
+section.date_box .editor_box .input-group .operate_box .checkbox_box .checkbox_mask.active:before,
+section.play_box .black_box .input-group .operate_box .checkbox_box .checkbox_mask.active:before,
+section.date_box .black_box .input-group .operate_box .checkbox_box .checkbox_mask.active:before {
+  content: ' ';
+  width: 5px;
+  height: 2px;
+  background: #fecb46;
+  position: absolute;
+  transform: rotate(45deg);
+  top: 50%;
+  left: 40%;
+  margin-left: -4px;
+  margin-top: 1px;
+}
+section.play_box .editor_box .input-group .operate_box .checkbox_box input,
+section.date_box .editor_box .input-group .operate_box .checkbox_box input,
+section.play_box .black_box .input-group .operate_box .checkbox_box input,
+section.date_box .black_box .input-group .operate_box .checkbox_box input {
+  opacity: 0;
+  width: 30px;
+  height: 30px;
+  vertical-align: bottom;
+}
+section.play_box .editor_box .input-group .submit,
+section.date_box .editor_box .input-group .submit,
+section.play_box .black_box .input-group .submit,
+section.date_box .black_box .input-group .submit {
+  width: 40%;
+  border-radius: 5px;
+  background: #f36a6a;
+  color: #fff;
+}
+section.play_box .editor_box .input-group textarea,
+section.date_box .editor_box .input-group textarea,
+section.play_box .black_box .input-group textarea,
+section.date_box .black_box .input-group textarea {
+  width: 70%;
+  padding: 5px 10px;
+  height: 200px;
+}
+section.play_box .black_box,
+section.date_box .black_box {
+  height: auto;
+  padding-bottom: 20px;
+}

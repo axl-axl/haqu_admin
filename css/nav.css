@@ -1,0 +1,94 @@
+nav {
+  background: #212831;
+  width: 180px;
+  height: 100vh;
+  position: fxied;
+}
+nav .logo {
+  line-height: 100px;
+  text-align: center;
+}
+nav ul {
+  background: #2c333e;
+}
+nav ul li {
+  line-height: 60px;
+  font-size: 1.8rem;
+  padding-left: 20px;
+  padding-right: 10%;
+}
+nav ul li.arrows {
+  background-image: url('../images/arrows.png');
+  background-repeat: no-repeat;
+  background-position: 92% center;
+}
+nav ul li.arrows.active {
+  background-image: url('../images/arrows_u.png');
+}
+nav ul li.active,
+nav ul li:hover {
+  background-color: #fecb46;
+}
+nav ul li.active a,
+nav ul li:hover a {
+  color: #000;
+}
+nav ul li a:hover,
+nav ul li a:link,
+nav ul li a:active,
+nav ul li a:visited {
+  color: #fff;
+}
+nav ul ul {
+  border-left: 1px solid #2c333e;
+  padding: 10px 0;
+  background: #212831;
+}
+nav ul ul li {
+  background: #212831;
+  line-height: 30px;
+}
+nav ul ul li a {
+  padding-left: 15px;
+  position: relative;
+  line-height: 25px;
+  font-size: 1.6rem;
+}
+nav ul ul li a:before {
+  content: '';
+  position: absolute;
+  height: 30px;
+  width: 2px;
+  display: block;
+  top: -5px;
+  left: 0;
+  background: #2c333e;
+}
+nav ul ul li:hover,
+nav ul ul li.active {
+  background: #212831;
+}
+nav ul ul li:hover a,
+nav ul ul li.active a {
+  color: #fff;
+}
+nav ul ul li:hover a:before,
+nav ul ul li.active a:before {
+  background: #fecb46;
+}
+.uesr_nav {
+  background: #fff;
+  width: 100%;
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
+}
+.main_body {
+  width: calc(100% - 180px);
+}
+.main_body .uesr_nav span {
+  line-height: 37px;
+  padding-right: 20px;
+}
+.main_body .uesr_nav span a {
+  display: inline-box;
+  margin: 0 15px;
+}

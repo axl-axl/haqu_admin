@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/table.css">
+	<link rel="stylesheet" type="text/css" href="./lib/datetimepicker/bootstrap-datetimepicker.min.css">
+	<link rel="stylesheet" type="text/css" href="./lib/webuploader/webuploader.css">
+</head>
+<body>
+	<nav class="pull-left clearfix">
+		<div class="logo">
+			<img src="./images/logo.png">
+		</div>
+		<ul>
+			<li class="active">
+				<a href="./index.html">首页</a>
+			</li>
+			<li>
+				<a href="./video_list.html">视频管理</a>
+			</li>
+			<li class="arrows">
+				<a href="javascript:;" data-toggle="collapse" data-target="#user_panel">用户管理</a>
+			</li>
+			<ul id="user_panel" class="collapse">
+				<li><a href="./user_list.html">用户编辑</a></li>
+				<li><a href="./user_black.html">黑名单</a></li>
+			</ul>
+			<li class="arrows">
+				<a href="javascript:;" data-toggle="collapse" data-target="#api_panel">接口管理</a>
+			</li>
+			<ul id="api_panel" class="collapse">
+				<li><a href="./api_list.html">分类排序</a></li>
+				<li><a href="./api_search.html">搜索排序</a></li>
+				<li><a href="./api_hot.html">热门标签</a></li>
+			</ul>
+			<li class="arrows">
+				<a href="javascript:;" data-toggle="collapse" data-target="#contain_panel">内容审核</a>
+			</li>
+			<ul id="contain_panel" class="collapse">
+				<li><a href="./content_video.html">视频审核</a></li>
+				<li><a href="./content_say.html">评论审核</a></li>
+				<li><a href="./content_report.html">举报处理</a></li>
+				<li><a href="./content_world.html">过滤词库</a></li>
+			</ul>
+			<li class="arrows">
+				<a href="javascript:;" data-toggle="collapse" data-target="#day_panel">日常运营</a>
+			</li>
+			<ul id="day_panel" class="collapse">
+				<li><a href="./operate.html">每日精选</a></li>
+				<li><a href="./operate_theme.html">话题</a></li>
+			</ul>
+			<li>
+				<a href="./account.html">账号管理</a>
+			</li>
+		</ul>
+	</nav>
+
+	<div class="main_body pull-right clearfix">
+		<section class="table_box">
+			<div class="header clearfix">
+				<div class="pull-right">
+					<a href="javascript:;" id='add_user'>+添加</a>
+				</div>
+			</div>
+			<table class="table">
+				<thead>
+					<th class="text-center">ID</th>
+					<th class="text-center">用户名</th>
+					<th class="text-center">密码</th>
+					<th class="text-center">权限</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>24154</td>
+						<td>阿斯顿发额</td>
+						<td>qwefsdW</td>
+						<td class="power_box">
+							<span class="checkbox_box">
+				            	<div class="checkbox_mask"></div>
+				            	<input type="checkbox" name='power'>
+				            	搞笑
+				            </span>
+				            <span class="checkbox_box">
+				            	<div class="checkbox_mask"></div>
+				            	<input type="checkbox" name='power'>
+				            	视频管理
+				            </span>
+				            <span class="checkbox_box">
+				            	<div class="checkbox_mask"></div>
+				            	<input type="checkbox" name='power'>
+				            	用户管理
+				            </span>
+				            <span class="checkbox_box">
+				            	<div class="checkbox_mask active"></div>
+				            	<input type="checkbox" name='power'>
+				            	接口管理
+				            </span>
+				            <span class="checkbox_box">
+				            	<div class="checkbox_mask"></div>
+				            	<input type="checkbox" name='power'>
+				            	内容审核
+				            </span>
+				            <span class="checkbox_box">
+				            	<div class="checkbox_mask"></div>
+				            	<input type="checkbox" name='power'>
+				            	日常运营
+				            </span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<ul class="page pull-right">
+				<li>
+					<a href="">
+						首页
+					</a>
+				</li>
+				<li><a href="">1</a></li>
+				<li><a href="">2</a></li>
+				<li><a href="">3</a></li>
+				<li class="active"><a href="">4</a></li>
+				<li>
+					<a href="">
+						尾页
+					</a>
+				</li>
+			</ul>
+		</section>
+		<section class="play_box">
+			<div class="mask"></div>
+			<form class="black_box">
+				<div class="header">
+					添加账户
+				</div>
+				<div class="input-group">
+					<span class="input-title">用户名</span>
+		            <input type="text" placeholder="twitterhandle">
+				</div>
+				<div class="input-group">
+					<span class="input-title">密码</span>
+		            <input type="text" placeholder="twitterhandle">
+				</div>
+				<div class="input-group">
+					<span class="input-title">权限</span>
+		            <div class="operate_box">
+						<span class="checkbox_box">
+				           	<div class="checkbox_mask"></div>
+				           	<input type="checkbox" name='power'>
+				          	日常运营
+				        </span>
+				        <span class="checkbox_box">
+				           	<div class="checkbox_mask"></div>
+				           	<input type="checkbox" name='power'>
+				          	日常运营
+				        </span>
+				        <span class="checkbox_box">
+				           	<div class="checkbox_mask"></div>
+				           	<input type="checkbox" name='power'>
+				          	日常运营
+				        </span>
+				        <span class="checkbox_box">
+				           	<div class="checkbox_mask"></div>
+				           	<input type="checkbox" name='power'>
+				          	日常运营
+				        </span>
+		            </div>
+				</div>
+				<div class="input-group text-center">
+					<input type="submit" class="submit" value="确认保存">
+				</div>
+			</form>
+		</section>
+	</div>
+	<script type="text/javascript" src="./js/jquery.min.js"></script>
+	<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		function checkbox(){
+			var checkboxs = document.getElementsByClassName('checkbox_box');
+			for(var i=0;i<checkboxs.length;i++){
+				if(checkboxs[i]['children'][1].checked){
+					checkboxs[i]['children'][0].classList.add('active');
+				}else{
+					checkboxs[i]['children'][0].classList.remove('active');
+				}
+			}
+		}
+		$('.checkbox_box input').click(function(){
+			checkbox();
+		})
+
+//添加新用户
+		$('#add_user').click(function(){
+			$('.play_box').show();
+		})
+		$('.mask').click(function(){
+			$(this).parent().hide();
+		})
+	</script>
+</body>
+</html>

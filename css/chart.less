@@ -1,0 +1,85 @@
+section.chart{
+	width:95%;
+	margin-left:2%;
+	padding:0 10px;
+	margin-top:40px;
+	.chart_header{
+		.select_box{
+			border:1px solid rgba(0,0,0,0.2);
+			border-radius:3px;
+			position:relative;
+			p{
+				padding:0 5px;
+				padding-right:20px;
+				background-color:#fff;
+				margin-bottom:0;
+				line-height:35px;
+				border-radius:3px;
+				background-image:url('./images/arrows.png');
+				cursor:pointer;
+			}
+			.option_box{
+				display:none;
+				background:#fff;
+				border-radius:3px;
+				position:absolute;
+				bottom:-210%;
+				left:0;
+				border:1px solid #ddd;
+				width:100%;
+				.select_option{
+					cursor:pointer;
+					border-bottom:1px solid #ddd;
+					padding:0 5px;
+					line-height:30px;
+				}
+			}
+
+		}
+		.time_box{
+			color:#999;
+			span{
+				background:#fff;
+				border:1px solid #ddd;
+				line-height:35px;
+				display:inline-block;
+				padding:0 10px;
+				min-width:80px;
+				text-align:center;
+				cursor:pointer;
+				&:nth-child(1){
+					border-radius:5px 0 0 5px;
+					margin-right:-1rem;
+				}
+				&:nth-child(2){
+					border-radius:0 5px 5px 0;
+				}
+				&.T_active{
+					background:#f36a6a;
+					color:#fff;
+				}
+			}
+			input{
+				width:120px;
+				border-radius:3px;
+				border:1px solid #ddd;
+				margin:0 10px;
+				line-height:35px;
+				padding-left:10px;
+				color:#999;
+			}
+			#T_btn{
+				background:#212831;
+				border-radius:3px;
+				color:#fff;
+				padding:0 10px;
+				display:inline-block;
+				line-height:35px;
+			}
+		}
+	}
+	.chart_content{
+		width:100% !important;
+		margin-top:20px;
+	}
+} 

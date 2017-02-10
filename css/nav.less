@@ -1,0 +1,88 @@
+nav{
+	background:#212831;
+	width:180px;
+	height:100vh;
+	position:fxied;
+	.logo{
+		line-height:100px;
+		text-align:center;
+	}
+	ul{
+		background:#2c333e;
+		li{
+			line-height:60px;
+			font-size:1.8rem;
+			padding-left:20px;
+			padding-right:10%;
+			&.arrows{
+				background-image:url('../images/arrows.png');
+				background-repeat:no-repeat;
+				background-position:92% center;
+				&.active{
+					background-image:url('../images/arrows_u.png');
+				}
+			}
+			&.active,&:hover{
+				background-color:#fecb46;
+				a{
+					color:#000;
+				}
+			}
+			a:hover,a:link,a:active,a:visited{
+				color:#fff;
+			}
+		}
+		ul{
+			border-left:1px solid #2c333e;
+			padding:10px 0;
+			background:#212831;
+			li{
+				background:#212831;
+				line-height:30px;
+				a{
+					padding-left:15px;
+					position:relative;
+					line-height:25px;
+					font-size:1.6rem;
+					&:before{
+						content:'';
+						position:absolute;
+						height:30px;
+						width:2px;
+						display:block;
+						top:-5px;
+						left:0;
+						background:#2c333e;
+					}
+				}
+				&:hover,&.active{
+					background:#212831;
+					a{
+						color:#fff;
+						&:before{
+							background:#fecb46;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.uesr_nav{
+	background:#fff;
+	width:100%;
+	box-shadow:0 0px 5px rgba(0,0,0,0.5);
+}
+.main_body{
+	width:e("calc(100% - 180px)");
+	.uesr_nav{
+		span{
+			line-height:37px;
+			padding-right:20px;
+			a{
+				display:inline-box;
+				margin:0 15px;
+			}
+		}
+	}
+}

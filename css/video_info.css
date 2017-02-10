@@ -1,0 +1,153 @@
+@import "main.css";
+@import "nav.css";
+section.video_info {
+  margin-top: 40px;
+  padding: 0 20px;
+}
+section.video_info .header .breadcrumb {
+  padding: 0;
+}
+section.video_info .header .breadcrumb li a {
+  background: inherit;
+  line-height: 1.5rem;
+  color: #666;
+}
+section.video_info form {
+  width: 800px;
+}
+section.video_info form .input-group {
+  margin-top: 25px;
+  width: 100%;
+}
+section.video_info form .input-group input {
+  border: 1px solid #ddd;
+}
+section.video_info form .input-group .input-title {
+  width: 15%;
+  margin-right: 20px;
+  display: inline-block;
+  line-height: 35px;
+  text-align: right;
+}
+section.video_info form .input-group .long_input {
+  width: 81%;
+  line-height: 35px;
+  border-radius: 3px;
+  background: #fff;
+  padding-left: 15px;
+}
+section.video_info form .input-group .img_in {
+  width: 81%;
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+}
+section.video_info form .input-group .img_in .img_box,
+section.video_info form .input-group .img_in .add_box {
+  width: 300px;
+  height: 200px;
+  display: inline-block;
+  vertical-align: bottom;
+  background: #f7f7f7;
+  line-height: 200px;
+  text-align: center;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+section.video_info form .input-group .img_in .img_box {
+  border: 1px dashed #ddd;
+}
+section.video_info form .input-group .checkbox_box {
+  display: inline-block;
+  position: relative;
+  margin-right: 20px;
+}
+section.video_info form .input-group .checkbox_box .checkbox_mask {
+  position: absolute;
+  z-index: -1;
+  border: 1px solid #999;
+  width: 20px;
+  height: 20px;
+  bottom: 0;
+  left: 5px;
+  border-radius: 3px;
+}
+section.video_info form .input-group .checkbox_box .checkbox_mask.active {
+  background-color: #000;
+}
+section.video_info form .input-group .checkbox_box .checkbox_mask.active:after {
+  content: ' ';
+  width: 10px;
+  height: 2px;
+  background: #fecb46;
+  position: absolute;
+  transform: rotate(135deg);
+  top: 50%;
+  left: 40%;
+  margin-left: -1.5px;
+}
+section.video_info form .input-group .checkbox_box .checkbox_mask.active:before {
+  content: ' ';
+  width: 5px;
+  height: 2px;
+  background: #fecb46;
+  position: absolute;
+  transform: rotate(45deg);
+  top: 50%;
+  left: 40%;
+  margin-left: -4px;
+  margin-top: 1px;
+}
+section.video_info form .input-group .checkbox_box input {
+  opacity: 0;
+  width: 30px;
+  height: 30px;
+  vertical-align: bottom;
+}
+section.video_info form .short-group {
+  width: 50%;
+  float: left;
+  margin-top: 25px;
+}
+section.video_info form .short-group .input-title {
+  width: 30%;
+  margin-right: 20px;
+  display: inline-block;
+  line-height: 35px;
+  text-align: right;
+}
+section.video_info form .short-group .short_input {
+  border: 1px solid #ddd;
+  padding-left: 15px;
+  width: 60%;
+  line-height: 35px;
+  border-radius: 3px;
+  background: #fff;
+}
+section.video_info form .search_box {
+  position: relative;
+}
+section.video_info form .search_box .search_re {
+  position: absolute;
+  width: 60%;
+  bottom: -250%;
+  left: 36%;
+  z-index: 9;
+  background: #fff;
+}
+section.video_info form .search_box .search_re li {
+  padding-left: 15px;
+  border: 1px solid #ddd;
+  line-height: 35px;
+  cursor: pointer;
+}
+section.video_info form .submit {
+  width: 150px;
+  background: #f36a6a;
+  border-radius: 3px;
+  color: #fff;
+  text-align: center;
+  margin-top: 50px;
+  line-height: 35px;
+}
